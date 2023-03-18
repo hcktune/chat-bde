@@ -1,0 +1,96 @@
+html {
+    box-sizing: border-box;
+    background-color: #fdf1f7;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+body *+* {
+    margin: 1em auto;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    font-size: 1.2em;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    width: 50%;
+    color: rgb(87, 21, 59);
+    padding-bottom: 0.5em;
+    border-bottom: 3px solid rgb(87, 21, 59);
+}
+
+main {
+    background-color: #934b7100;
+}
+
+.main-container {
+    margin: 3em;
+}
+
+label {
+    font-weight: 600;
+    color: #5A1138;
+    font-size: .7em;
+}
+
+input[type=text],
+input[type=password] {
+    color: #000000;
+    font-size: .65em;
+    width: 300px;
+    font-weight: 600;
+    background-color: white;
+    border: 1px solid black;
+    padding: .5em;
+}
+
+input[type=text],
+input[type=password],
+.submit {
+    border-radius: 8px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+}
+
+.submit {
+    color: #ffffff;
+    width: 100%;
+    padding: 0.2em;
+    font-size: 1em;
+    background-color: #5a1138;
+    border: 5px solid #00000000;
+}
+
+@media (min-width:475px) {
+    html {
+        font-size: 1.3em;
+    }
+    input[type=text],
+    input[type=password] {
+        width: 18em;
+    }
+}
