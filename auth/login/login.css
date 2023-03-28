@@ -20,6 +20,7 @@ body {
     min-height: 100vh;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .container {
@@ -33,6 +34,7 @@ header {
 
 h2 {
     text-align: center;
+    margin-bottom: 0;
     width: 50%;
     color: rgb(87, 21, 59);
     padding-bottom: 0.5em;
@@ -53,8 +55,7 @@ label {
     font-size: .7em;
 }
 
-input[type=text],
-input[type=password] {
+input {
     color: #000000;
     font-size: .65em;
     width: 300px;
@@ -64,8 +65,7 @@ input[type=password] {
     padding: .5em;
 }
 
-input[type=text],
-input[type=password],
+input,
 .submit {
     border-radius: 8px;
 }
@@ -89,8 +89,7 @@ input[type=password],
     html {
         font-size: 1.3em;
     }
-    input[type=text],
-    input[type=password] {
+    input {
         width: 18em;
     }
 }
